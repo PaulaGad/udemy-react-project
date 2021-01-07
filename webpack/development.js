@@ -14,7 +14,7 @@ module.exports = {
      {
       loader: 'css-loader',
       options: {
-       module: {
+       modules: {
         localIdentName: '[local]',
        }
       },
@@ -29,7 +29,7 @@ module.exports = {
    },
    {
     test: /\.(s(a|c)ss|css)$/,
-    exclude: /\.module.(s(a|c)ss)$/,
+    exclude: /\.module.(s(a|c)ss)$/, //wykluczamy je
     loader: [
      'style-loader',
      'css-loader',

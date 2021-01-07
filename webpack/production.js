@@ -18,7 +18,7 @@ module.exports = {
      {
       loader: 'css-loader',
       options: {
-       module: {
+       modules: {
         localIdentName: '[local]',
        }
       },
@@ -35,7 +35,7 @@ module.exports = {
     test: /\.(s(a|c)ss|css)$/,
     exclude: /\.module.(s(a|c)ss)$/,
     loader: [
-     'style-loader',
+     MiniCssExtractPlugin.loader,
      'css-loader',
      {
       loader: 'sass-loader',

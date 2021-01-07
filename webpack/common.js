@@ -11,7 +11,7 @@ module.exports = {
   path: path(__dirname, '..', 'build'),
  },
  resolve: {
-  extensions: ['.js', 'jsx'], //przy importach nie trzeba podawać takich końcówek
+  extensions: ['.js', '.jsx'], //przy importach nie trzeba podawać takich końcówek
  },
  module: {
   rules: [
