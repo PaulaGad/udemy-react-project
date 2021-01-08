@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
 import Courses from '../Courses/Courses';
+import UsersCourses from '../UserCourses/UserCourses';
 import { StoreContext } from '../../store/StoreProvider';
 
 import bemCssModules from 'bem-css-modules';
@@ -21,7 +22,7 @@ const Content = () => {
   <main className={style()}>
    <Switch>
     <Route exact path="/" render={() => <Courses/>} />
-    { isUserLogged && <Route exact path="/my-courses" render={() => <p>Moje kursy</p>}/>}
+    { isUserLogged && <Route exact path="/my-courses" render={() => <UsersCourses />}/>}
     { isAdminLogged && <Route exact path="/manage-courses" render={() => <p>Zarządzanie kursami</p>}/>}
     <Redirect to="/"/>
     {/* Gdybyśmy źle wpisali adres, to przełączy nas na stronę główną */}
