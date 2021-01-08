@@ -1,7 +1,13 @@
 .aside-menu {
   padding: 15px;
-  background-color: #ddd;
   width: 200px;
+  background-color: #ddd;
+  position: relative;
+
+  &__nav-wrapper {
+    position: sticky;
+    top: 80px;
+  }
   &__title {
     margin-top: 20px;
   }
@@ -13,7 +19,7 @@
     list-style: none;
     background-color: lightsalmon;
     cursor: pointer;
-    
+
     &:hover {
       background-color: maroon;
     }
