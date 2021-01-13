@@ -25,8 +25,8 @@ const LoginForm = ({handleOnClose, isModalOpen}) => {
   setValidateMessage('');
  }
 
- const handleOnSubmit = async event => {
-  event.preventDefault();
+ const handleOnSubmit = async e => {
+  e.preventDefault();
   const { data, status } = await request.post(
    '/users',
    { login, password }
