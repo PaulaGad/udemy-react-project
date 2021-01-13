@@ -30,7 +30,7 @@ module.exports = {
    {
     test: /\.(s(a|c)ss|css)$/,
     exclude: /\.module.(s(a|c)ss)$/, //wykluczamy je
-    loader: [
+    use: [
      'style-loader',
      'css-loader',
      {
