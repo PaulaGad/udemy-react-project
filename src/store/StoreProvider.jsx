@@ -16,15 +16,6 @@ const StoreProvider = ({ children }) => {
   fetchData();
  }, []);
 
- // const fetchData = async () => {
- //  const { data } = await request.get('/courses');
- //  setCourses(data.courses);
- // }
-
- // useEffect(() => {
- //  fetchData();
- // }, []);
-
  return (
   <StoreContext.Provider value={{ //wrzucamy tu wszystko, bo chcemy korzystać z tego w całej aplikacji, ale jako obiekt
    courses,
